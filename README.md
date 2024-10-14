@@ -18,17 +18,41 @@ This project is implemented in Go and demonstrates how to make concurrent API re
 
 To run this project, you need to have Go installed on your machine.
 
+### Using `go run`
+
 Run the program:
 
 ```bash
-go run main.go <cep>
+go run *.go <cep>
 ```
 
-Example:
+Replace `<cep>` with the zip code you want to search for.
 
 ```bash
-go run main.go 01153000
+go run *.go 01311-000
 ```
+
+### Using Makefile
+
+Alternatively, you can use the Makefile to run the program:
+
+```bash
+make run cep=01311-000
+```
+
+Replace `01311-000` with the zip code you want to search for.
+
+```bash
+make run cep=01311-000
+```
+
+To clean the build artifacts, run:
+
+```bash
+make clean
+```
+
+This section provides instructions for both running the program directly with `go run` and using the Makefile to build and run the program.
 
 ## Output
 
